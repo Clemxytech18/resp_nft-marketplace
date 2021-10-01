@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    90.18deg,
+    rgba(61, 61, 61, 0.2052) 0%,
+    rgba(29, 29, 29, 0.285) 100%
+  );
+  border-radius: 0px 0px 15px 15px;
+}
+.nav__links {
+  display: flex;
+  list-style: none;
+}
+.nav__link {
+  margin-right: 3rem;
+  color: white;
+  font-size: 1rem;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.863);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+.header__section {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__heading {
+  color: white;
+  font-size: 4rem;
+  width: 50%;
+  text-align: center;
+}
+.header__paragraph {
+  color: white;
+  font-size: 1rem;
+  width: 30%;
+  text-align: center;
+}
+.gallery {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  width: 24%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  
+}
+.card__image {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.zora-cardMediaWrapper {
+  width: 100% !important;
+}
+.card > .zora-cardOuter {  
+  margin:0;
+}
+@media only screen and  (min-width: 601px) and (max-width: 800px) {
+  .card {
+    width: 30%;
+  }
+  .gallery { 
+    width: 90%;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+  }
+  .nav__links {
+    display: none;
+  }
+  .header__heading {
+    font-size: 2rem;
+  }
+  .header__paragraph {
+    font-size: 1rem;
+  }
+  .gallery { 
+    justify-content: center;
+  }
+}
